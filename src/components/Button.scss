@@ -10,6 +10,16 @@ $pink: #f06595;
   &:active {
     background: darken($color, 10%);
   }
+
+  &.outline {
+    color: $color;
+    background: none;
+    border: 1px solid $color;
+    &:hover {
+      background: $color;
+      color: white;
+    }
+  }
 }
 
 .Button {
@@ -59,6 +69,15 @@ $pink: #f06595;
   // 버튼 옆에 버튼이 있으면 사이즈룰 주겠다.
   & + & {
     margin-left: 1rem;
+  }
+
+  &.fullWidth {
+    width: 100%;
+    justify-content: center;
+    & + & {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
   }
 }
 
