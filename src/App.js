@@ -46,7 +46,18 @@ function App() {
         <Button size="large" color="gray" fullWidth>
           Button
         </Button>
-        <Button size="large" color="pink" fullWidth>
+        <Button
+          size="large"
+          color="pink"
+          fullWidth
+          className="customized-button"
+          onClick={() => {
+            console.log("클릭!");
+          }}
+          onMouseMove={() => {
+            console.log("마우스움직임");
+          }}
+        >
           Button
         </Button>
       </div>
